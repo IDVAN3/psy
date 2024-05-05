@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240505171237">
+    <title>Post</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <!-- Header -->
+        <header class="header">
+    <div class="header__left">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <a href="index.html" class="nav__link">Головна</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link has-subnav">Пости</a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="post.html" class="subnav__link">Когнітивно-поведінкова терапія</a>
+                        </li>
+                        <li>
+                            <a href="post.html" class="subnav__link">Заходи</a>
+                        </li>
+                        <li>
+                            <a href="post.html" class="subnav__link">Арт терапія</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="text.html" class="nav__link">Про мене</a>
+                </li>
+                <li>
+                    <a href="text.html" class="nav__link">Реклама</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="burger" type="button" id="sidebarToggle">
+            <span>navigation</span>
+        </button>
+    </div>
+    <div class="header__right">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li>
+                    <a href="profile.html" class="nav__link">Профіль</a>
+                </li>
+                <li>
+                    <a href="signin.html" class="nav__link">Вийти</a>
+                </li>
+            </ul>
+        </nav>
+        <form action="search.html" method="get" class="search">
+            <input class="search__input" type="text" placeholder="Пошук">
+        </form>
+    </div>
+</header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+        <picture><source srcset="img/sidebar__header.webp" type="image/webp"><img src="img/sidebar__header.jpg" alt=""></picture>
+    </div>
+    <div class="sidebar__content">
+        <div class="profile">
+            <picture><source srcset="img/avatar.webp" type="image/webp"><img class="profile__avatar" src="img/avatar.jpg" alt=""></picture>
+            <div class="profile__header">
+                <div class="profile__name">Ірина Мисів</div>
+                <div class="profile__prof">Блог психолога</div>
+            </div>
+
+            <ul class="social">
+                <li class="social__item" title="icons8-instagram">
+                    <a href="https://www.instagram.com/imy.psy?igsh=a3NybjBqZXJraHJ1" class="social__link icon-box" target="_blank">
+                            <img src="img/icons/icons.svg#icons8-instagram" class="svg-icons8" alt="icons8-instagram">
+                        
+                    </a>
+                </li>
+                <li class="social__item" title="icons8-telegram-app">
+                    <a href="https://t.me/irynamysiv" class="social__link icon-box" target="_blank">
+                            <img src="img/icons/icons.svg#icons8-telegram-app" class="svg-icons8" alt="icons8-telegram-app">
+                    </a>
+                </li>
+                <li class="social__item" title="icons8-youtube">
+                    <a href="https://www.youtube.com/@imy_psy" class="social__link icon-box" target="_blank">
+                            <img src="img/icons/icons.svg#icons8-youtube" class="svg-icons8" alt="icons8-youtube">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="profile__text">
+                Допоможу зрозуміти свої емоції та знайти вихід. Майбутній магістр психології. Когнітивно-поведінковий підхід.
+            </div>
+        </div>
+
+        <nav class="nav nav--mobile">
+            <ul class="nav__list">
+                <li>
+                    <a href="index.html" class="nav__link">Головна</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link has-subnav">Пости</a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="post.html" class="subnav__link">Когнітивно-поведінкова терапія</a>
+                        </li>
+                        <li>
+                            <a href="post.html" class="subnav__link">Заходи</a>
+                        </li>
+                        <li>
+                            <a href="post.html" class="subnav__link">Арт терапія</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="text.html" class="nav__link">Про мене</a>
+                </li>
+                <li>
+                    <a href="text.html" class="nav__link">Реклама</a>
+                </li>
+                <li>
+                    <a href="profile.html" class="nav__link">Профіль</a>
+                </li>
+                <li>
+                    <a href="signin.html" class="nav__link">Вийти</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar__footer">
+        <a class="btn btn--red" href="works.html">Мій досвід</a>
+        <button class="btn btn--blue" type="button" data-modal="contact-modal">Напиши мені</button>
+    </div>
+</aside>
+        
+        <!-- Main -->
+        <main class="main">
+            <div class="container">
+                
+<article class="post">
+    <div class="post__actions">
+        <a class="post__actions-link" href="index.html">Повернутись назад</a>
+        <a class="post__actions-link" href="#">Репост
+            <img class="post__repost" src="img/icons/repost.svg" alt="">
+        </a>
+    </div>
+    <div class="post__header post__header--open">
+        <h2 class="post__title post__title--open">Стосунки в парі</h2>
+        <ul class="post__data">
+            <li class="post__data-item">
+                <time datetime="2024-04-29 16:35">29.04.2024</time>
+            </li>
+            <li class="post__data-item">
+                <a href="#">Психологія, книги</a>
+            </li>
+        </ul>
+    </div>
+    <div class="post__content">
+        
+        <div class="post__text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni iusto illum laboriosam vel assumenda, recusandae <a href="#"> ipsum consequatur</a> debitis delectus ratione id ullam quasi neque excepturi ducimus distinctio voluptatum! Facilis eaque soluta magnam aliquam itaque cumque voluptates fuga ratione maxime dolore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolor id minima velit voluptas recusandae, eius veritatis saepe, qui impedit quibusdam quam, consequuntur cum hic. Recusandae eveniet quod quaerat magni!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam omnis aliquid itaque doloribus numquam quaerat aperiam, suscipit odio, veniam perferendis cum. Architecto, quo. Repudiandae, reprehenderit. Magnam aut blanditiis assumenda totam!</p>
+            <h2>Title H2</h2>
+            <picture><source srcset="img/post/post-2.webp" type="image/webp"><img src="img/post/post-2.jpg" alt=""></picture>
+            <h3>Title H3</h3>
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="related">
+            <h3 class="post__subtitle">Також цікаво</h3>
+            <ul class="related__list">
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">Cоціальна тривожність: симптоми</a> 
+                    </h4>
+                    <time class="related__list-date" datetime="2024-05-04">04.05.2024</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">Що таке помилки мислення?🤥
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2024-05-04">04.05.2024</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">Ревнує - отже любить?🤔
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2024-05-04">04.05.2024</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">Мене часто питають, де знайти сили і мотивацію жити далі, коли на вулиці війна?
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2024-05-04">04.05.2024</time>
+                </li>
+            </ul>
+        </div>
+
+        <div class="add-comments">
+            <h3 class="post__subtitle">Обговорення</h3>
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Введіть текст коментару" data-autoresize></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <button class="btn btn--blue btn--rounded btn--sm" type="submit">Відправити</button>
+            </form>
+        </div>
+
+        <ul class="comments">
+            <li class="comments__item">
+                <div class="comments__header">
+                    <picture><source srcset="https://placehold.it/30" type="image/webp"><img class="comments__avatar" src="https://placehold.it/30" alt=""></picture>
+                    <div class="comments__author">
+                        <div class="comments__name">Ivan Davydenko</div>
+                        <time class="comments__pubdate" datetime="2024-05-04 12:57">1 week ago</time>
+                    </div>
+                </div>
+                <div class="comments__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cupiditate voluptatibus animi quia libero tempora in totam assumenda tempore corporis sit nulla fugit consequuntur, quibusdam similique eveniet neque! Ea, autem.
+                </div>
+                <button class="comments__reply">Відповісти</button>
+
+                <ul class="comments">
+                    <li class="comments__item">
+                        <div class="comments__header">
+                            <picture><source srcset="https://placehold.it/30" type="image/webp"><img class="comments__avatar" src="https://placehold.it/30" alt=""></picture>
+                            <div class="comments__author">
+                                <div class="comments__name">Sanya</div>
+                                <time class="comments__pubdate" datetime="2024-05-04 12:57">1 week ago</time>
+                            </div>
+                        </div>
+                        <div class="comments__text">
+                            Nice forms
+                        </div>
+                        <button class="comments__reply">Відповісти</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</article>
+
+
+<ul class="pagination">
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">&lt;</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">1</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link active" href="#">2</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">&gt;</a>
+    </li>
+</ul>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="modal" id="story-modal">
+    <div class="modal__content modal__content--story">
+        <video 
+        class="modal__video" 
+        controls="controls" 
+        poster="https://placehold.it/420x580">
+            <source src="video/video_2024-05-04_21-25-00.mp4">
+        </video>
+    </div>
+</div>
+    <div class="modal" id="contact-modal">
+    <div class="modal__content modal__content--contact">
+        <form class="form" action="/" method="post">
+
+            <div class="form__group form__group-md">
+                <input class="form__control" type="text" placeholder="Ім'я">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group-md">
+                <input class="form__control" type="email" placeholder="Електронна пошта">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group-md">
+                <textarea class="form__control form__control--textarea" placeholder="Текст повідомлення"></textarea>
+                <span class="form__line"></span>
+            </div>
+        
+            <div class="form__footer">
+                <div class="form__group form__group-md">
+                    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Відправити</button>
+                </div>
+
+            </div>
+        </form>
+
+        <button class="modal__close" type="button">
+            <img src="img/icons/close.svg" alt="Close">
+        </button>
+
+        <ul class="modal__footer">
+            <li>
+                e-mail: <a href="mailto:ivan.98@gmail.com">ivan.98.davydenko@gmail.com</a>
+            </li>
+            <li>
+                тел: <a href="tel:+380993680738">+380993680738</a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="modal">
+    <div class="modal__content">
+        <ul class="social">
+            <li class="social__item" title="icons8-instagram">
+                <a href="https://www.instagram.com/imy.psy?igsh=a3NybjBqZXJraHJ1" class="social__link icon-box">
+                        <img src="img/icons/icons.svg#icons8-instagram" class="svg-icons8" alt="icons8-instagram">
+                    
+                </a>
+            </li>
+            <li class="social__item" title="icons8-telegram-app">
+                <a href="https://t.me/irynamysiv" class="social__link icon-box">
+                        <img src="img/icons/icons.svg#icons8-telegram-app" class="svg-icons8" alt="icons8-telegram-app">
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link icon-box">
+                        <img class="icon--copy" src="img/icons/copy.svg"  alt="copy">
+                </a>
+            </li>
+        </ul>
+
+        <button class="modal__close" type="button">
+            <img src="img/icons/close.svg" alt="Close">
+        </button>
+    </div>
+</div>
+    
+    <script src="js/app.min.js?_v=20240505171237"></script>
+</body>
+</html>
