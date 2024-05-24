@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240505171237">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Signin</title>
 </head>
 <body>
@@ -65,14 +65,14 @@
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
     <div class="sidebar__header">
-        <picture><source srcset="img/sidebar__header.webp" type="image/webp"><img src="img/sidebar__header.jpg" alt=""></picture>
+        <img src="img/sidebar__header.jpg" alt="">
     </div>
     <div class="sidebar__content">
         <div class="profile">
-            <picture><source srcset="img/avatar.webp" type="image/webp"><img class="profile__avatar" src="img/avatar.jpg" alt=""></picture>
+            <img class="profile__avatar" src="../img-full/avatar_02.png" alt="">
             <div class="profile__header">
-                <div class="profile__name">Ірина Мисів</div>
-                <div class="profile__prof">Блог психолога</div>
+                <div class="profile__name">Мисів Ірина</div>
+                <div class="profile__prof">Психолог-консультант, КПТ-підхід, техніки Арт-терапії</div>
             </div>
 
             <ul class="social">
@@ -193,7 +193,7 @@
                 <span class="form__line"></span>
             </div>
             <div class="form__group form__group-md">
-                <textarea class="form__control form__control--textarea" placeholder="Текст повідомлення"></textarea>
+                <textarea class="form__control form__control--textarea" placeholder="Текст повідомлення" maxlength="1200" data-autoresize></textarea>
                 <span class="form__line"></span>
             </div>
         
@@ -211,15 +211,15 @@
 
         <ul class="modal__footer">
             <li>
-                e-mail: <a href="mailto:ivan.98@gmail.com">ivan.98.davydenko@gmail.com</a>
+                e-mail: <a href="mailto:iramysiv2000@gmail.com">iramysiv2000@gmail.com</a>
             </li>
             <li>
-                тел: <a href="tel:+380993680738">+380993680738</a>
+                тел: <a href="tel:+380634685130">+380634685130</a>
             </li>
         </ul>
     </div>
 </div>
-    <div class="modal">
+    <div class="modal" id="share-modal">
     <div class="modal__content">
         <ul class="social">
             <li class="social__item" title="icons8-instagram">
@@ -246,6 +246,6 @@
     </div>
 </div>
     
-    <script src="js/app.min.js?_v=20240505171237"></script>
+    <script src="js/app.min.js"></script>
 </body>
 </html>
